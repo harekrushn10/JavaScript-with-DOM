@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of two</title>
+</head>
+<body>
+    <P id="URO"></P>
+    <form method=post action="" onsubmit="fun(); return false">
+        <input type="text" name="n1" id="n1">
+        <input type="text" name="n2" id="n2">
+        <input type="submit" name="submit" value="submit">
+        
+        
+        <form>
+
+    
+    <script>
+        
+        function fun()
+        {
+            n1 = parseInt(document.getElementById("n1").value);
+            n2 = parseInt(document.getElementById("n2").value);
+           sum=n1+n2;
+
+            
+        
+        document.getElementById("URO").innerHTML="SUM OF TWO VALUES="+sum;
+        }
+            </script>
+</body>
+</html>
