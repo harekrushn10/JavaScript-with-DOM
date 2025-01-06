@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum-sub-div-mul</title>
+</head>
+<body style="background-color: aquamarine;">
+    <form method="post" action="" onsubmit="fun(); return false">
+        <input type="text" name="v1" id="v1">
+        <input type="text" name="v2" id="v2">
+        <input type="submit" name="submit" value="submit">
+    </form>
+    
+    <p id="HARI"></p>
+
+    <script>
+        function fun()
+        {
+            v1 = parseFloat(document.getElementById("v1").value);
+            v2 = parseFloat(document.getElementById("v2").value);
+            sum = v1+v2;
+            sub = v1-v2;
+            mul = v1*v2;
+            div = v1/v2;
+
+            document.getElementById("HARI").innerHTML="<br>sum:"+sum+"<br>sub:"+sub+"<br>mul:"+mul+"<br>div:"+div;
+        }
+    </script>
+</body>
+</html>
