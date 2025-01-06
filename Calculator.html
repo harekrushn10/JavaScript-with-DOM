@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun()
+        {
+        ans=0;
+        n1 = parseInt(document.getElementById("n1").value);
+        n2 = parseInt(document.getElementById("n2").value);
+        op = document.getElementById("op").value;
+
+        switch(op)
+        {
+            case '+':ans=n1+n2;
+                break;
+
+            case '-':ans=n1-n2;
+                break;
+
+            case '*':ans=n1*n2;
+                break;
+            
+            case '/':ans=n1/n2;
+                break;
+
+            case '%':ans=n1%n2;
+                break;
+        }
+    
+        document.getElementById("n3").value=ans;
+    }
+    </script>
+</head>
+<body>
+    <form action="" method="post" onsubmit="fun(); return false">
+        <p>ENTER FIRST VALUE</p>
+        <p><input type="text" name="n1" id="n1"></p>
+        <p>ENTER SECOND VALUE</p>
+        <P><input type="text" name="n2" id="n2"></P>
+        <p>SELECT OPTION FROM FOLLOWING</p>
+        <p><select name="OP" id="op">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+            <option>%</option>
+        </select></p>
+        <p><input type="submit" name="submit" id="" value="submit"></p>
+        <p>OUTPUT</p>
+        <p><input type="text" name="n3" id="n3"></p>
+    </form>
+</body>
+</html>
