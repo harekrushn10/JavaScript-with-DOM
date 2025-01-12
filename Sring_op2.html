@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Convert String to upper case:</h2>
+    <button onclick="myFunction()">Upper Case</button>
+    <p id="demo">uro computer</p>
+    <h2>The concat() method joins two or more strings.</h2>
+    <p id="demo1"></p>
+    <h2>Remove space.</h2>
+    <p>The charAt() method returns the character at a given position a string</p>
+    <button onclick="myFun()">Trim command</button>
+    <p id="demo2"></p>
+    <script>
+        function myFunction()
+        {
+            var txt = document.getElementById("demo").innerHTML;
+            txt= txt.toLowerCase();
+            if(txt=="uro computer")
+        {
+            txt="pcs computer";
+        }
+        else
+        {
+            txt="uro computer";
+        }
+
+        document.getElementById("demo").innerHTML = txt.toUpperCase();
+        
+        }
+        var txt1 = "URO";
+        var txt2 = "COMPUTER";
+        var txt3 = txt1.concat(" ",txt2);
+
+        document.getElementById("demo1").innerHTML = "concat  "+ txt1 +" & "+ txt2 +" = "+ txt3;
+
+        function myFun()
+        {
+            var str="  URO COMPUTER   ";
+            alert(str.trim())
+        }
+
+        var str1 = "URO COMPUTER";
+
+        
+
+    </script>
+</body>
+</html>
