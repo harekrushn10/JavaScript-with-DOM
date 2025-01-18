@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun()
+        {
+            str="";
+            v1 = parseFloat(document.getElementById("v1").value);
+            v2 = parseFloat(document.getElementById("v2").value);
+            sum = v1+v2;
+           // document.write("sum="+sum);
+          //  alert("Sum of two values"+sum);
+          
+          if(v1>v2)
+          {
+            str="max value="+v1+"minimum value="+v2;
+          }
+          else
+          {
+            str="max value="+v2+"minimum value="+v1;
+
+          }
+          document.getElementById("sum").value=sum;
+          document.getElementById("v3").value=str;
+          
+            //document.getElementById("HARI").innerHTML="<br>sum:"+sum+"<br>sub:"+sub+"<br>mul:"+mul+"<br>div:"+div;
+        }
+    </script>
+   
+</head>
+<body>
+    <form method="post" action="" onsubmit="fun(); return false">
+        <input type="text" name="v1" id="v1">
+        <input type="text" name="v2" id="v2">
+        <input type="submit" name="submit" value="submit">
+        <input type="text" name="sum" id="sum">
+        <input type="text" name="v3" id="v3">
+    </form>
+</body>
+</html>
