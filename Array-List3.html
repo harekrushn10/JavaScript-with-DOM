@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Array</h2>
+    <p>Loop:</p>
+    <p id="demo"></p>
+    <script>
+        const Person=["Umesh","Sejal","Prince"];
+        //let fLen = Person.length;
+        
+        let txt="<ul>";
+            for(let i=0;i<Person.length;i++)
+            {
+                txt += "<li>" + Person[i] +"</li>";
+            }
+            txt += "</ul>";
+            document.getElementById("demo").innerHTML=txt;
+    </script>
+</body>
+</html>
