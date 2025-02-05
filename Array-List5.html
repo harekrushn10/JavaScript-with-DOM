@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Array</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        const Person=new Array("Umesh","Sejal","Prince");
+        document.getElementById("demo").innerHTML=Person;
+        document.getElementById("demo1").innerHTML=Person[0];
+        document.getElementById("demo2").innerHTML=Person.length;
+        document.getElementById("demo3").innerHTML=Person[Person.length-2];
+    </script>
+</body>
+</html>
