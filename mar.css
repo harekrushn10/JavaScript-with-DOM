@@ -1,0 +1,79 @@
+div
+{
+    background-color: rgb(245, 240, 224);
+    border: 3px;
+    border-radius: 15px;
+    border-style: dashed;
+    border-top-color:  rgb(205, 241, 129);
+    border-bottom-color:  rgb(250, 151, 71);
+    border-right-color: rgb(254, 82, 222);
+    border-left-color: rgb(129, 115, 240);
+    color: rgba(4, 117, 79, 0.948);
+    max-height: 400px;
+    max-width: 420px;
+    margin-left: 550px;
+}
+h1
+{
+ 
+    text-decoration: underline;
+    background-color: rgb(215, 243, 177);
+}
+
+p:hover
+{
+    background-color: rgb(149, 243, 243);
+}
+input:focus {
+    background-color: rgb(113, 234, 210);
+    border-width: 20px;
+  }
+input{
+    border-color: crimson;
+}
+input[type=submit]{
+    color: rgb(20, 28, 14);
+    background-color: rgb(76, 243, 76);
+    width: 100%;
+    border-radius: 15px;
+    padding: 5px;
+}
+input[type=text]{
+    width: 100%;
+    background-color: rgb(152, 216, 228);
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 3px;
+    }
+form
+{
+    font-style: italic;
+    color: red;
+    background-color: rgb(242, 237, 218);
+    border: 3px;
+    border-style: dashed;
+    border-top-color:  rgb(236, 42, 42);
+    border-bottom-color:  rgb(44, 249, 64);
+    border-right-color: aqua;
+    border-left-color: burlywood;
+    max-width: 400px;
+    max-height: 100%;
+    margin-left: 550px;
+    border-radius: 15px;
+    padding: 10px;
+    letter-spacing: 0.1px;
+    text-decoration: underline;
+}
+body
+{
+    background-color: rgb(245, 211, 169);
+}
+input:hover
+{
+    background-color: rgb(244, 157, 202);
+    width: 100%;
+}
+table{
+    border-width: 5px;
+
+}
