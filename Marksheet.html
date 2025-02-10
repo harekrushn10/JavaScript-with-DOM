@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marksheet</title>
+    <link rel="stylesheet" href="mar.css">
+</head>
+<body >
+    <div>
+    <h1 align="center">MarkSheet</h1>
+    <p align="center">(Class)</p>
+    <!-- <h1>JavaScript Classes</h1>
+    <hr color="black" size="5px"> -->
+</div>
+    <hr color="black" size="5px">
+    <form action="" onsubmit="fun(); return false" align="center">
+       
+        <p>ENTER FIRST SUBJECT MARKS</p>
+        <input type="text" name="SUB1" id="SUB1" placeholder="Enter marks out of 100">
+        <p>ENTER SECOND SUBJECT MARKS</p>
+        <input type="text" name="SUB2" id="SUB2" placeholder="Enter marks out of 100">
+        <p>ENTER THIRD SUBJECT MARKS</p>
+        <input type="text" name="SUB3" id="SUB3" placeholder="Enter marks out of 100">
+        <p></p>
+        <input type="submit" name="submit" id="submit">
+        <p>TOTAL MARKS</p>
+        <input type="text" name="TOTAL" id="TOTAL" readonly>
+        <p>PERSENTAGE</p>
+        <input type="text" name="PER" id="PER" readonly>
+        <p>GRADE</p>
+        <input type="text" name="GRADE" id="GRADE" readonly></td></tr>      
+        <!-- <tr><td align=""><input type="submit" name="submit" id="submit"></td></tr> -->
+   
+    </form>
+
+<script>
+    function fun()
+    {
+        sub1 = parseInt(document.getElementById('SUB1').value);
+        sub2 = parseInt(document.getElementById('SUB2').value);
+        sub3 = parseInt(document.getElementById('SUB3').value);
+
+        const obj = new student();
+        obj.getdata(sub1,sub2,sub3);
+        obj.display();
+    }
+
+    class student{
+        getdata(sub1,sub2,sub3){
+            this.sub1 = sub1;
+            this.sub2 = sub2;
+            this.sub3 = sub3;
+        }
+        display()
+        {
+            this.total = this.sub1 + this.sub2 + this.sub3;
+            document.getElementById('TOTAL').value=this.total;
+            this.per=this.total/3;
+            document.getElementById('PER').value=this.per;
+            if(this.per>80)
+                {
+                    this.grade='A';
+                }
+            else if(this.per>60 && this.per<=80)
+                {
+                    this.grade='B';
+                }
+            else if(this.per>40 && this.per<=60)
+                {
+                    this.grade='C';
+                }
+            else 
+                {
+                    this.grade='D';
+                }
+                document.getElementById('GRADE').value=this.grade;
+        }
+    }
+    </script>
+</body>
+</html>
